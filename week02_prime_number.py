@@ -8,10 +8,9 @@ else:
     i = 2
     while i*i <number: # reduce loop operation
         if number % i == 0:
-            # is_prime_number = is_prime_number +1
             is_prime_number = False #Remove addition operation
             break #Exit the loop when the first divisor is found. Performance is improved when the input value is not a prime number.
-        print(i, end=" ")
+        # print(i, end=" ")
         i = i+1
 
 #if is_prime_number ==0:
