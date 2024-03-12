@@ -1,11 +1,16 @@
 number = int(input("Input number: "))
 
-count=0
-for i in range(1, number+1):
-    if number % i==0:
-        count = count +1
+if number <2:
+    count =1
+else:
+    count = 0
+    for i in range(2, number):
+        if number % i == 0:
+            count = count + 1
+            break #Exit the loop when the first divisor is found. Performance is improved when the input value is not a prime number.
+        print(i, end=" ")
 
-if count ==2:
-    print(f"{number} is prime number")
+if count ==0:
+    print(f"{number} is prime number~")
 else:
     print(f"{number} is NOT prime number!")
