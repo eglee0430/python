@@ -4,11 +4,11 @@ is_prime_number = True #Change variable name from count to is_prime_number for r
 if number <2:
     is_prime_number = False
 else:
-    #for i in range(2, number):
+    # for i in range(2, number):
     i = 2
-    while i <number: #for to while
+    while i*i <number: # reduce loop operation
         if number % i == 0:
-            #is_prime_number = is_prime_number +1
+            # is_prime_number = is_prime_number +1
             is_prime_number = False #Remove addition operation
             break #Exit the loop when the first divisor is found. Performance is improved when the input value is not a prime number.
         print(i, end=" ")
