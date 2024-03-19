@@ -6,7 +6,7 @@ if number <2:
 else:
     # for i in range(2, number):
     i = 2
-    while i*i < number: # reduce loop operation
+    while i*i <= number: # bug fix
         if number % i == 0:
             is_prime_number = False #Remove addition operation
             break #Exit the loop when the first divisor is found. Performance is improved when the input value is not a prime number.
