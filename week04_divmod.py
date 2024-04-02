@@ -25,7 +25,7 @@ def calculate_fx(fx, x):
     return result
 
 coefficient = [5,-2,0,6]
-
+print("데굴데굴"*3)
 print(print_fx(coefficient))
 x=int(input("Input x value: "))
 print(calculate_fx(coefficient, x))
