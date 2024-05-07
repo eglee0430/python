@@ -1,6 +1,16 @@
 # ISHS CAFFE
 # Americano 1500, Latte 2500원
 
+def select_menu(index):
+    """
+    display menu, calculate total price and count quantity
+    :param index: index or list
+    :return: None
+    """
+    global total_price
+    print(f"You ordered {beverage[index]}. The price is {prices[index]} won.")
+    total_price=total_price+prices[index]
+
 beverage = ["Americano", "Latte", "Iced tea"]
 prices = [1500, 2500, 2300]
 total_price=0
@@ -17,17 +27,11 @@ while True:
         print("Your order has been accepted.")
         break
     elif menu == '1':
-        print("You ordered Americano coffee. The price is 1,500 won")
-        total_price = total_price + prices[0]
-        quantity[0] = quantity[0] + 1
+        select_menu(0):
     elif menu == '2':
-        print("You ordered a cafe latte. The price is 2,500 won")
-        total_price = total_price + prices[1]
-        quantity[1] = quantity[1] + 1
+        select_menu(1):
     elif menu == '3':
-        print("You ordered an iced tea. The price is 2,500 won")
-        total_price = total_price + prices[2]
-        quantity[2] = quantity[2] + 1
+        select_menu(2):
     else:
         print(f"Menu number {menu} you ordered does not exist. Please choose from the menu")
 
